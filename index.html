@@ -73,7 +73,7 @@
             Package, Clock, Zap, Percent, Filter, Settings, Edit2, X, Tag, AlertTriangle, 
             Upload, Download, Sparkles, Bot, Loader2, Users, Copy, TrendingUp, DollarSign, 
             Archive, FileSpreadsheet, Image as ImageIcon, Coins, Search, Link as LinkIcon, 
-            Unlink, Database 
+            Unlink, Database, ExternalLink 
         } from 'lucide-react';
 
         // --- CONFIGURAÇÃO DA API ---
@@ -1178,6 +1178,9 @@
                         <p className="text-stone-500 mt-2 text-sm ml-1">Gerencie custos, defina preços e garanta seu lucro.</p>
                     </div>
                     <div className="flex gap-2 items-center flex-wrap justify-end">
+                        <Button variant="outline" onClick={() => window.open('https://jangabrielsg-bit.github.io/ControledeProdu-o/', '_blank')}>
+                            <ExternalLink size={18} /> Controle de Rendimentos
+                        </Button>
                         <Button variant="outline" onClick={() => setView('ingredients')}><Database size={18} /> Estoque</Button>
                         <Button variant="outline" onClick={() => setImportModal({ isOpen: true })}><FileSpreadsheet size={18} /> Importar IA</Button>
                         <Button variant="outline" onClick={() => setView('settings')}><Settings size={18} /> Config</Button>
